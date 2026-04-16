@@ -241,8 +241,8 @@ function Skills() {
 
 // ═══ PROJECTS ═══
 const projects = [
-    { icon: '🏔️', name: 'Boomerang', sub: '3D GAME — 2025', status: 'complete', ribbon: '✅ COMPLETED', desc: '3D obstacle game — cross a river using stepping stones. Timing-based gameplay with physics in Unity.', tags: ['Unity', 'C#', 'Physics', '3D'], xp: 90, img: 'assets/boomerang.png' },
-    { icon: '🦊', name: 'Fangs & Wings', sub: '2D SURVIVAL GAME — 2025', status: 'complete', ribbon: '✅ COMPLETED', desc: '2D survival game centered around dual-character control. Survive continuous waves of bats with coordination and quick reflexes.', tags: ['Unity', 'C#', 'Enemy AI', '2D'], xp: 75, img: 'assets/Fangs & Wings.png' }
+    { icon: '🏔️', name: 'Boomerang', sub: '3D GAME — 2025', status: 'complete', ribbon: '✅ COMPLETED', desc: '3D obstacle game — cross a river using stepping stones. Timing-based gameplay with physics in Unity.', tags: ['Unity', 'C#', 'Physics', '3D'], xp: 90, img: '/assets/boomerang.png' },
+    { icon: '🦊', name: 'Fangs & Wings', sub: '2D SURVIVAL GAME — 2025', status: 'complete', ribbon: '✅ COMPLETED', desc: '2D survival game centered around dual-character control. Survive continuous waves of bats with coordination and quick reflexes.', tags: ['Unity', 'C#', 'Enemy AI', '2D'], xp: 75, img: '/assets/fangs-and-wings.png' }
 ];
 
 function Projects() {

@@ -21,7 +21,7 @@ const projects = [
         ],
         tags: ['Unity', 'C#', 'Physics', '3D'],
         github: 'https://github.com/Karan-Thakur69281112233/Boomerang',
-        thumbnail: 'assets/boomerang.png',
+        thumbnail: '/assets/boomerang.png',
         video: null
     },
     {
@@ -40,7 +40,7 @@ const projects = [
         ],
         tags: ['Unity', 'C#', '2D', 'Survival'],
         github: 'https://github.com/Karan-Thakur69281112233/fangs-and-wings',
-        thumbnail: 'assets/Fangs & Wings.png',
+        thumbnail: '/assets/fangs-and-wings.png',
         video: null
     }
 ];
