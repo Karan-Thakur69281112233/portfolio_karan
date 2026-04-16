@@ -30,7 +30,7 @@ const projects = [
         sub: '2D Survival Game — Unity — 2025',
         status: 'completed',
         statusLabel: 'Completed',
-        desc: 'Fangs & Wings is a 2D survival game centered around dual-character control, where the player manages both a fox on the ground and an eagle in the air. The objective is to survive against continuous waves of attacking bats that target the fox. While the fox must be carefully moved to avoid danger, the eagle acts as the primary defense, eliminating enemies before they reach their target.',
+        desc: 'Fangs & Wings is a 2D survival game centered around dual-character control, where the player manages both a fox on the ground and an eagle in the air. The objective is to survive against continuously attacking bats that target the fox. While the fox must be carefully moved to avoid danger, the eagle acts as the primary defense, eliminating enemies before they reach their target.',
         role: 'Game Programmer',
         tools: 'Unity, C#',
         features: [

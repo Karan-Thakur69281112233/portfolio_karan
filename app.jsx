@@ -242,7 +242,7 @@ function Skills() {
 // ═══ PROJECTS ═══
 const projects = [
     { icon: '🏔️', name: 'Boomerang', sub: '3D GAME — 2025', status: 'complete', ribbon: '✅ COMPLETED', desc: '3D obstacle game — cross a river using stepping stones. Timing-based gameplay with physics in Unity.', tags: ['Unity', 'C#', 'Physics', '3D'], xp: 90, img: '/assets/boomerang.png' },
-    { icon: '🦊', name: 'Fangs & Wings', sub: '2D SURVIVAL GAME — 2025', status: 'complete', ribbon: '✅ COMPLETED', desc: '2D survival game centered around dual-character control. Survive continuous waves of bats with coordination and quick reflexes.', tags: ['Unity', 'C#', 'Enemy AI', '2D'], xp: 75, img: '/assets/fangs-and-wings.png' }
+    { icon: '🦊', name: 'Fangs & Wings', sub: '2D SURVIVAL GAME — 2025', status: 'complete', ribbon: '✅ COMPLETED', desc: 'Fangs & Wings is a 2D survival game centered around dual-character control, where the player manages both a fox on the ground and an eagle in the air. The objective is to survive against continuously attacking bats that target the fox. While the fox must be carefully moved to avoid danger, the eagle acts as the primary defense, eliminating enemies before they reach their target.', tags: ['Unity', 'C#', 'Enemy AI', '2D'], xp: 75, img: '/assets/fangs-and-wings.png' }
 ];
 
 function Projects() {
