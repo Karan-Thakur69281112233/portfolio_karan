@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Thakur — Game Programmer</title>
+    <meta name="description"
+        content="Portfolio of Karan Thakur, a Game Programmer crafting interactive worlds where mechanics meet creativity. Unity, C#, Blender, and more.">
+    <meta name="keywords"
+        content="Game Programmer, Unity Developer, Karan Thakur, Game Development, Blender, C#, Portfolio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="particleCanvas" class="global-particles"></canvas>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ✨ HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Karan Thakur</h1>
+            <h2 class="hero-subtitle">
+                <span class="subtitle-bracket">&lt;</span>
+                <span class="subtitle-text" id="typedText"></span>
+                <span class="typed-cursor">|</span>
+                <span class="subtitle-bracket">/&gt;</span>
+            </h2>
+            <p class="hero-tagline">Crafting interactive worlds where mechanics meet creativity.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3" />
+                    </svg>
+                    View Projects
+                </a>
+                <a href="#contact" class="btn btn-outline-hero">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 👤 ABOUT SECTION -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-portrait">
+                    <div class="portrait-frame">
+                        <img src="assets/karan.jpg" alt="Karan Thakur" class="portrait-img" id="profileImg">
+                    </div>
+                    <div class="portrait-glow"></div>
+                </div>
+                <div class="about-text">
+                    <p>I am a passionate <strong>Game Development</strong> student at <strong>Chitkara
+                            University</strong>, driven by a strong interest in creating interactive and engaging gaming
+                        experiences. I enjoy transforming ideas into playable games, focusing on both creativity and
+                        functionality.</p>
+                    <p>Alongside game development, I am enthusiastic about <strong>3D modeling in Blender</strong> and
+                        creating <strong>2D art</strong>, which allows me to bring my concepts to life visually. I
+                        specialize in <strong>Game Programming</strong> with <strong>Unity</strong>, building both
+                        <strong>2D</strong> and <strong>3D</strong> experiences.</p>
+                    <p>I am eager to explore new technologies, collaborate on exciting projects, and contribute to
+                        innovative game experiences.</p>
+                </div>
+                <div class="about-card-stack">
+                    <div class="about-info-card">
+                        <div class="info-icon">🎮</div>
+                        <span class="info-label">Focus</span>
+                        <span class="info-value">Game Programming</span>
+                    </div>
+                    <div class="about-info-card">
+                        <div class="info-icon">🛠️</div>
+                        <span class="info-label">Engine</span>
+                        <span class="info-value">Unity & Unreal</span>
+                    </div>
+                    <div class="about-info-card">
+                        <div class="info-icon">🎨</div>
+                        <span class="info-label">Art</span>
+                        <span class="info-value">Blender & Photoshop</span>
+                    </div>
+                    <div class="about-info-card">
+                        <div class="info-icon">🎓</div>
+                        <span class="info-label">University</span>
+                        <span class="info-value">Chitkara University</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🧩 PROJECTS SECTION -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-list" id="projectsList">
+                <!-- Projects rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 🛠️ SKILLS SECTION -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Skills & Tools</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid" id="skillsGrid">
+                <!-- Skills rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 📜 RESUME SECTION -->
+    <section class="section section-alt" id="resume">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Resume</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="resume-content">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color: var(--purple-400); margin-bottom: 20px;">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <h2 class="resume-title">Download My Resume</h2>
+                <p class="resume-desc">Get a detailed overview of my skills, projects, and experience.</p>
+                <div style="display: flex; flex-direction: column; gap: 16px; align-items: center;">
+                    <a href="assets/resume_22.pdf" target="_blank" rel="noopener" class="btn btn-view-resume">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                        View Resume
+                    </a>
+                    <a href="assets/resume_22.pdf" download="Karan_Thakur_Resume.pdf" class="btn btn-resume" id="resumeBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📬 CONTACT SECTION -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-desc">I'm always open to new opportunities, collaborations, and conversations about
+                    game development. Feel free to reach out!</p>
+                <div class="contact-cards">
+                    <a href="https://mail.google.com/mail/?view=cm&to=karan.snrhp@gmail.com" target="_blank"
+                        rel="noopener" class="contact-card" id="contactEmail">
+                        <div class="contact-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">karan.snrhp@gmail.com</span>
+                        </div>
+                        <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Karan-Thakur69281112233" target="_blank" rel="noopener" class="contact-card"
+                        id="contactGithub">
+                        <div class="contact-icon-wrap">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">github.com/karan</span>
+                        </div>
+                        <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
